@@ -1,0 +1,329 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/*!
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bg.jpg') no-repeat center fixed;
+    -webkit-background-size: ;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+ */
+
+/*Link colours*/
+a {
+    color: #B58F15;
+}
+
+/*Hover animation for links*/
+a:hover { 
+   text-decoration: none;
+   color:#990033;
+
+}
+
+li.nav-item.dropdown {
+    color: red;
+}
+
+
+/*Background images*/
+
+body { 
+    background-image; TBC
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 
+}
+
+.bottom-image {
+  max-width: 60%;
+  z-index: -100;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width:40px;
+}
+
+
+.dropdown-menu{
+    text-align: center;
+    box-shadow: none
+}
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('../fonts/NeutraText-LightItalicAlt.woff2') format('woff2'),
+        url('../fonts/NeutraText-LightItalicAlt.woff') format('woff'),
+        url('../fonts/NeutraText-LightItalicAlt.ttf') format('truetype'),
+        url('../fonts/NeutraText-LightItalicAlt.otf') format('otf'),
+        url('../fonts/NeutraText-LightItalicAlt.svg') format('svg');
+}
+
+
+@font-face {
+  font-family: 'MyWebFont2';
+  src:  url('../fonts/NeutraText-LightItalicAlt.woff2') format('woff2'),
+        url('../fonts/NeutraText-LightItalicAlt.woff') format('woff'),
+        url('../fonts/NeutraText-LightItalicAlt.ttf') format('truetype'),
+        url('../fonts/NeutraText-LightItalicAlt.otf') format('otf'),
+        url('../fonts/NeutraText-LightItalicAlt.svg') format('svg');
+
+}
+
+    
+h1, h2, h3, h4, h5, h6, p, label, hr, input, textarea, select, input, .navbar, .brand, .dropdown-item
+.address-bar, .navbar-nav, .navbar-brand
+{
+    font-family: 'MyWebFont',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    color: #B58F15;
+    text-transform: lowercase;
+}
+h1, {
+    font-size: 2em;
+}
+h2 { 
+    font-size: 1.5em;
+}
+p {
+    font-size: 0.5em;
+}
+
+/*Header format */
+hr, {
+    max-width: 100px;
+    border-color: #B58F15;
+    border-top: dotted;
+    border-bottom: dotted;
+    border-width: 1px;
+}
+
+
+    
+.subheader {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1em;
+    color: #313131;
+}
+
+.box {
+    background-color: rgba(255,255,255,.80);
+}
+
+
+.brand,
+.address-bar {
+    display: none;
+   ;
+}
+
+.brand-name {
+    margin: 0
+    text-transform: lowercase;
+    font-style: italic;
+   
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.homepage-image {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 0.7em;
+  background: white;
+  padding: 10px 30px 10px 30px;
+  transition: .5s ease;
+
+
+}
+
+.layer:hover .middle {
+    font-size: 1em;
+    }
+
+
+.layer:hover .homepage-image {
+    opacity: 1;
+    }
+
+
+
+
+
+.cafe {
+max-width: 500px
+}
+
+
+
+.col-md-4 {
+    padding-bottom: 20px;
+}
+
+
+.dropdown-toggle {
+    padding: 20px;
+}
+
+
+.col-xs-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.box {
+    margin-bottom: 20px;
+    padding: ;
+    background: #fff;
+    background: rgba(255,255,255,.80);
+}
+
+.intro-text {
+    text-transform: lowercase;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #B58F15;
+    font-style: italic;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        padding-top:100px;
+        padding-bottom: 20px;
+        display: inherit;
+        margin: 0;
+        text-align: center;
+        font-family: 'MyWebFont',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 1em;
+        line-height: normal;
+        color: #AA8516;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0);
+    }
+
+    .nav {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
