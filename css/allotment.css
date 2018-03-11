@@ -132,10 +132,7 @@ hr, {
     width: 50%;
 }
 
-/*Mobile logo*/
-.logo_mobile {
-    display: none;
-}
+
 
 .brand,
 .address-bar {
@@ -270,9 +267,8 @@ footer p {
 
 @media screen and (max-width:768px) {
     .logo_mobile {
-        display: inherit;
-        padding: 40px 0px 40px 0px;
-        background-color: #ffffff
+     display: inherit;
+     padding: 40px 0px 40px 0px;
     }
     }
 
@@ -307,6 +303,11 @@ footer p {
         font-weight: 400;
         letter-spacing: 3px;
         color: #fff;
+    }
+
+    /*Mobile logo*/
+    .logo_mobile {
+        display: none;
     }
     
     /*Nav bar settings - only applies to desktop*/
