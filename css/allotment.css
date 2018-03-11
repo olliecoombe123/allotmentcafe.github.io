@@ -4,14 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 /*!
-body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center fixed;
-    -webkit-background-size: ;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
  */
 
 /*Link colours*/
@@ -19,27 +11,34 @@ a {
     color: #B58F15;
 }
 
+/*Navigation bar links*/
+.navbar-default .navbar-nav > li > a {
+    color: #B58F15;
+}
+
+/*Navigation bar links*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #990033;
+    background-color: transparent;
+}
+
 /*Hover animation for links*/
 a:hover { 
-   text-decoration: none;
    color:#990033;
 
 }
 
-li.nav-item.dropdown {
-    color: red;
-}
 
 
-/*Background images*/
-
-body { 
-    background-image; TBC
+/*Background carrot image*/
+body {
+    background-image: url("../img/background_carrot.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right; 
+    background-position: right;
 }
 
+/*Background onion image*/
 .bottom-image {
   max-width: 60%;
   z-index: -100;
@@ -50,21 +49,22 @@ body {
 }
 
 
+
+/*Drodown menu settings*/
 .dropdown-menu{
     text-align: center;
     box-shadow: none
 }
 
-
+/*Font settings*/
 @font-face {
   font-family: 'MyWebFont';
-  src:  url('../fonts/NeutraText-LightItalicAlt.woff2') format('woff2'),
-        url('../fonts/NeutraText-LightItalicAlt.woff') format('woff'),
-        url('../fonts/NeutraText-LightItalicAlt.ttf') format('truetype'),
-        url('../fonts/NeutraText-LightItalicAlt.otf') format('otf'),
-        url('../fonts/NeutraText-LightItalicAlt.svg') format('svg');
-}
+  src:  url('../fonts/NeutraText-LightItalic.otf') format('otf'),
+        url('../fonts/NeutraText-LightItalic.woff') format('woff'),
+        url('../fonts/NeutraText-LightItalic.ttf') format('ttf');
 
+     
+}
 
 @font-face {
   font-family: 'MyWebFont2';
@@ -76,9 +76,11 @@ body {
 
 }
 
-    
+
+
+/*Heading settings*/
 h1, h2, h3, h4, h5, h6, p, label, hr, input, textarea, select, input, .navbar, .brand, .dropdown-item
-.address-bar, .navbar-nav, .navbar-brand
+.address-bar, .navbar-nav, .navbar-brand, .middle
 {
     font-family: 'MyWebFont',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
@@ -104,8 +106,8 @@ hr, {
     border-width: 1px;
 }
 
-
-    
+/*Subheader - not sure what this is for*/
+   
 .subheader {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -115,10 +117,25 @@ hr, {
     color: #313131;
 }
 
+/*White box background*/
+
 .box {
-    background-color: rgba(255,255,255,.80);
+    margin-bottom: 20px;
+    padding: ;
+    background: #fff;
+    background: rgba(255,255,255,.80);
+    padding: 20px;
 }
 
+/*Logo settings*/
+.logo, .logo_mobile {
+    width: 50%;
+}
+
+/*Mobile logo*/
+.logo_mobile {
+    display: none;
+}
 
 .brand,
 .address-bar {
@@ -148,6 +165,8 @@ hr, {
 
 }
 
+/*Homepage images*/
+
 .layer {
     width: 100%;
     height: 100%;
@@ -159,14 +178,18 @@ hr, {
 }
 
 .homepage-image {
-    opacity: 0.5;
     transition: .5s ease;
+    background: linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),
 }
 
-
+/*Homepage text settings*/
 
 .middle {
   position: absolute;
+  border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -174,13 +197,13 @@ hr, {
   font-size: 0.7em;
   background: white;
   padding: 10px 30px 10px 30px;
-  transition: .5s ease;
+  transition: .5s ease;}
 
+/*Homepage text animation*/
 
-}
 
 .layer:hover .middle {
-    font-size: 1em;
+    font-size: 1.1em;
     }
 
 
@@ -189,37 +212,12 @@ hr, {
     }
 
 
-
-
-
-.cafe {
-max-width: 500px
-}
-
-
-
 .col-md-4 {
     padding-bottom: 20px;
 }
 
 
-.dropdown-toggle {
-    padding: 20px;
-}
 
-
-.col-xs-6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.box {
-    margin-bottom: 20px;
-    padding: ;
-    background: #fff;
-    background: rgba(255,255,255,.80);
-}
 
 .intro-text {
     text-transform: lowercase;
@@ -250,17 +248,43 @@ footer p {
     padding: 50px 0;
 }
 
+/*Navigation bar settings - only displays on mobile*/
+
+ .navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    opacity: 0.9;
+    } 
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #F0EFE2;
+   }
+
+.dropdown-item {
+    margin: 10px;
+    })
+
+/*Mobile display settings - only displays on mobile*/
+
+
+@media screen and (max-width:768px) {
+    .logo_mobile {
+        display: inherit;
+        padding: 40px 0px 40px 0px;
+        background-color: #ffffff
+    }
+    }
+
+
+/*Desktop display settings - only applies to desktop*/
 @media screen and (min-width:768px) {
     .brand {
-        padding-top:100px;
-        padding-bottom: 20px;
-        display: inherit;
-        margin: 0;
-        text-align: center;
-        font-family: 'MyWebFont',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 1em;
-        line-height: normal;
-        color: #AA8516;
+    padding-top:100px;
+    padding-bottom: 20px;
+    display: inherit;
+    text-align: center;
+    line-height: normal
     }
 
     .top-divider {
@@ -284,6 +308,8 @@ footer p {
         letter-spacing: 3px;
         color: #fff;
     }
+    
+    /*Nav bar settings - only applies to desktop*/
 
     .navbar {
         border-radius: 0;
@@ -295,12 +321,6 @@ footer p {
 
     .navbar {
         min-height: 0;
-    }
-
-    .navbar-default {
-        border: none;
-        background: #fff;
-        background: rgba(255,255,255,0);
     }
 
     .nav {
@@ -318,12 +338,10 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+
+    .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
 }
 
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}

@@ -41,7 +41,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/allotment.css" rel="stylesheet">
+    <link href="css/allotment.min.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -70,8 +70,7 @@
     <div class="brand">
 
    <!-- Logo -->
-    <a href="home.html"><img src="img/logo.png" alt="logo" width="20%"></a>
-
+    <a href="home.html"><img src="img/logo.png" class="logo" alt="logo"></a>
 
     </div>
    
@@ -87,22 +86,22 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                    <a class="navbar-brand" href="home.html">allotment</a>
+                    <a class="navbar-brand" href="home.html"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about_us.html">about us</a>
+                    </li>
                     <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kitchen</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="events.html">Events</a><br>
-                                <a class="dropdown-item" href="businesses.html">Businesses</a>
+                                <a class="dropdown-item" href="events.html">private catering</a><br>
+                                <a class="dropdown-item" href="businesses.html">corporate catering</a>
                             </div>
                     <li>
                         <a href="bakery.html">bakery</a>
-                    </li>
-                    <li>
-                        <a href="about_us.html">about us</a>
                     </li>
                     <li>
                         <a href="enquiries.html">get in touch</a>
@@ -118,6 +117,9 @@
     </nav>
 
     <div class="container">
+
+         <!-- Logo - only displays on mobile-->
+        <a href="home.html"><img src="img/logo.png" class ="logo_mobile" alt="logo"></a>
 
             <div class="box">
                 
