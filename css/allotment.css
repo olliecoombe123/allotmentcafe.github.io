@@ -3,346 +3,304 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+
 /*!
  */
 
-/*Link colours*/
+.container,
+.dropdown-menu,
+.layer {
+    text-align: center
+}
+
+.brand-name,
+.container,
+.intro-text {
+    font-style: italic
+}
+
+.navbar-default .navbar-nav>li>a,
 a {
-    color: #B58F15;
+    color: #B58F15
 }
 
-/*Navigation bar links*/
-.navbar-default .navbar-nav > li > a {
-    color: #B58F15;
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #903;
+    background-color: transparent
 }
 
-/*Navigation bar links*/
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #990033;
-    background-color: transparent;
+a:hover {
+    color: #903
 }
 
-/*Hover animation for links*/
-a:hover { 
-   color:#990033;
-
-}
-
-
-
-/*Background carrot image*/
 body {
-    background-image: url("../img/background_carrot.jpg");
+    background-image: url(../img/background_carrot.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right;
+    background-position: right
 }
 
-/*Background onion image*/
 .bottom-image {
-  max-width: 60%;
-  z-index: -100;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width:40px;
+    max-width: 60%;
+    z-index: -100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 40px
 }
 
+.layer,
+.middle {
+    top: 50%;
+    left: 50%;
+    transition: .5s ease
+}
 
-
-/*Drodown menu settings*/
-.dropdown-menu{
-    text-align: center;
+.dropdown-menu {
     box-shadow: none
 }
 
-/*Font settings*/
 @font-face {
-  font-family: 'MyWebFont';
-  src:  url('../fonts/NeutraText-LightItalic.otf') format('otf'),
-        url('../fonts/NeutraText-LightItalic.woff') format('woff'),
-        url('../fonts/NeutraText-LightItalic.ttf') format('ttf');
-
-     
+    font-family: MyWebFont;
+    src: url(../fonts/NeutraText-LightItalic.otf) format('otf'), url(../fonts/NeutraText-LightItalic.woff) format('woff'), url(../fonts/NeutraText-LightItalic.ttf) format('ttf')
 }
 
 @font-face {
-  font-family: 'MyWebFont2';
-  src:  url('../fonts/NeutraText-LightItalicAlt.woff2') format('woff2'),
-        url('../fonts/NeutraText-LightItalicAlt.woff') format('woff'),
-        url('../fonts/NeutraText-LightItalicAlt.ttf') format('truetype'),
-        url('../fonts/NeutraText-LightItalicAlt.otf') format('otf'),
-        url('../fonts/NeutraText-LightItalicAlt.svg') format('svg');
-
+    font-family: MyWebFont2;
+    src: url(../fonts/NeutraText-LightItalicAlt.woff2) format('woff2'), url(../fonts/NeutraText-LightItalicAlt.woff) format('woff'), url(../fonts/NeutraText-LightItalicAlt.ttf) format('truetype'), url(../fonts/NeutraText-LightItalicAlt.otf) format('otf'), url(../fonts/NeutraText-LightItalicAlt.svg) format('svg')
 }
 
-
-
-/*Heading settings*/
-h1, h2, h3, h4, h5, h6, p, label, hr, input, textarea, select, input, .navbar, .brand, .dropdown-item
-.address-bar, .navbar-nav, .navbar-brand, .middle
-{
-    font-family: 'MyWebFont',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+.brand,
+.dropdown-item .address-bar,
+.middle,
+.navbar,
+.navbar-brand,
+.navbar-nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+label,
+p,
+select,
+textarea {
+    font-family: MyWebFont, "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
     color: #B58F15;
-    text-transform: lowercase;
-}
-h1, {
-    font-size: 2em;
-}
-h2 { 
-    font-size: 1.5em;
-}
-p {
-    font-size: 0.5em;
+    text-transform: lowercase
 }
 
-/*Header format */
-hr, {
+,
+h1 {
+    font-size: 2em
+}
+
+h2 {
+    font-size: 1.5em
+}
+
+p {
+    font-size: .5em
+}
+
+,
+hr {
     max-width: 100px;
     border-color: #B58F15;
     border-top: dotted;
     border-bottom: dotted;
-    border-width: 1px;
+    border-width: 1px
 }
 
-/*Subheader - not sure what this is for*/
-   
 .subheader {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
     font-size: 1em;
     color: #313131;
+    padding: 10px 20% 30px
 }
-
-/*White box background*/
 
 .box {
     margin-bottom: 20px;
-    padding: ;
     background: #fff;
-    background: rgba(255,255,255,.80);
-    padding: 20px;
+    background: rgba(255, 255, 255, .8);
+    padding: 20px
 }
+
+/*Friends logo settings*/
+.friends_logo {
+    max-width: 250px;
+}
+
 
 /*Logo settings*/
-.logo, .logo_mobile {
-    width: 50%;
+.logo,
+.logo_mobile {
+    width: 50%
 }
 
-
-
-.brand,
-.address-bar {
-    display: none;
-   ;
+.address-bar,
+.brand {
+    display: none
 }
 
 .brand-name {
-    margin: 0
-    text-transform: lowercase;
-    font-style: italic;
-   
+    margin: 0 text-transform: lowercase
 }
 
 .tagline-divider {
     margin: 15px auto 3px;
     max-width: 250px;
-    border-color: #999999;
+    border-color: #999
+}
+
+.img-border,
+.img-left {
+    float: none;
+    margin: 0 auto
 }
 
 .container {
     padding-left: 20px;
     padding-right: 20px;
-    font-style: italic;
-    font-size: 1em;
-    text-align: center;
-
+    font-size: 1em
 }
-
-/*Homepage images*/
 
 .layer {
     width: 100%;
     height: 100%;
-    font-size: 2em;
-    top: 50%;
-    left: 50%;
-    transition: .5s ease;
-    text-align: center;
+    font-size: 2em
 }
 
 .homepage-image {
     transition: .5s ease;
-    background: linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 0, 0, 0.45)
-    ),
+    background: linear-gradient(rgba(255, 0, 0, .45), rgba(255, 0, 0, .45)), 0 0
 }
 
-/*Homepage text settings*/
+.middle,
+footer {
+    background: #fff
+}
 
 .middle {
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 0.7em;
-  background: white;
-  padding: 10px 30px 10px 30px;
-  transition: .5s ease;}
-
-/*Homepage text animation*/
-
-
-.layer:hover .middle {
-    font-size: 1.1em;
-    }
-
-
-.layer:hover .homepage-image {
-    opacity: 1;
-    }
-
-
-.col-md-4 {
-    padding-bottom: 20px;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: .7em;
+    padding: 10px 30px
 }
 
+.layer:hover .middle {
+    font-size: 1.1em
+}
 
+.layer:hover .homepage-image {
+    opacity: 1
+}
 
+.col-md-4 {
+    padding-bottom: 20px
+}
 
 .intro-text {
     text-transform: lowercase;
     font-size: 2em;
     letter-spacing: 1px;
-    color: #B58F15;
-    font-style: italic;
+    color: #B58F15
 }
 
 .img-border {
-    float: none;
-    margin: 0 auto 0;
-    border: #999999 solid 1px;
-}
-
-.img-left {
-    float: none;
-    margin: 0 auto 0;
+    border: 1px solid #999
 }
 
 footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, .9)
 }
 
 footer p {
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 0
 }
 
-/*Navigation bar settings - only displays on mobile*/
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    opacity: .9
+}
 
- .navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    opacity: 0.9;
-    } 
-
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    background-color: #F0EFE2;
-   }
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #F0EFE2
+}
 
 .dropdown-item {
-    margin: 10px;
-    })
+    margin: 10px
+}
 
-/*Mobile display settings - only displays on mobile*/
-
-
-@media screen and (max-width:768px) {
+) @media screen and (max-width:768px) {
     .logo_mobile {
-     display: inherit;
-     padding: 40px 0px 40px 0px;
+        display: inherit;
+        padding: 40px 0
     }
-    }
+}
 
-
-/*Desktop display settings - only applies to desktop*/
 @media screen and (min-width:768px) {
+    .address-bar,
     .brand {
-    padding-top:100px;
-    padding-bottom: 20px;
-    display: inherit;
-    text-align: center;
-    line-height: normal
+        display: inherit;
+        text-align: center
     }
-
+    .brand,
+    .navbar-nav>li>a {
+        line-height: normal
+    }
+    .brand {
+        padding-top: 100px;
+        padding-bottom: 20px
+    }
     .top-divider {
-        margin-top: 0;
+        margin-top: 0
     }
-
     .img-left {
         float: left;
-        margin-right: 25px;
+        margin-right: 25px
     }
-
     .address-bar {
-        display: inherit;
         margin: 0;
         padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
         text-transform: uppercase;
         font-size: 1.25em;
         font-weight: 400;
         letter-spacing: 3px;
-        color: #fff;
+        color: #fff
     }
-
-    /*Mobile logo*/
-    .logo_mobile {
-        display: none;
+    .logo_mobile,
+    .navbar-header {
+        display: none
     }
-    
-    /*Nav bar settings - only applies to desktop*/
-
     .navbar {
         border-radius: 0;
+        min-height: 0
     }
-
-    .navbar-header {
-        display: none;
-    }
-
-    .navbar {
-        min-height: 0;
-    }
-
     .nav {
-        padding: 35px;
+        padding: 35px
     }
-
-    .navbar-nav>li>a {
-        line-height: normal;
-    }
-
     .navbar-nav {
         display: table;
         float: none;
         margin: 0 auto;
         table-layout: fixed;
-        font-size: 1.25em;
+        font-size: 1.25em
     }
-
     .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+        background-color: transparent;
+        border-color: transparent
+    }
 }
-}
-
